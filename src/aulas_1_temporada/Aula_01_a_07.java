@@ -2,6 +2,9 @@ package aulas_1_temporada;
 
 public class Aula_01_a_07 {
 
+    //Autor: G_Silveira
+    //Conceitos Básicos do Java
+
 
     //Inicio_ Onde ocorre a leitura inicial do meu código (ponto de inicio)
     public static void main(String[] args) {
