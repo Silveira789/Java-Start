@@ -20,9 +20,8 @@ public class Aula_25 {
         long chute = 0;
 
 
-
-            System.out.println("Bem vindo ao jogo: adivinhe o número \n Um número aleatório foi escolhido por mim e você tem 3 chances para adivinha-lo.");
-            System.out.println("*Número entre 0 e 30");
+        System.out.println("Bem vindo ao jogo: adivinhe o número \n Um número aleatório foi escolhido por mim e você tem 3 chances para adivinha-lo.");
+        System.out.println("*Número entre 0 e 30");
 
 
         while ((tentativas > 0) && (acertou == false)) {
@@ -30,30 +29,36 @@ public class Aula_25 {
             System.out.println("Qual seu chute?");
             chute = input.nextLong();
 
-            if (chute == numeroSecreto) {
+            if ((chute <= 30) && (chute >= 1)) {
 
-                System.out.println("Você acertou!!!");
-                acertou = true;
+                if (chute == numeroSecreto) {
 
-            } else if (chute < numeroSecreto) {
+                    System.out.println("Você acertou!!!");
+                    acertou = true;
 
-                System.out.println("Número muito pequeno! ");
-                --tentativas;
-                System.out.println("tentativas restantes: " + tentativas);
+                } else if (chute < numeroSecreto) {
 
-            } else {
+                    System.out.println("Número muito pequeno! ");
+                    --tentativas;
+                    System.out.println("tentativas restantes: " + tentativas);
 
-                System.out.println("Numero muito grande! ");
-                --tentativas;
-                System.out.println("tentativas restantes: " + tentativas);
+                } else {
+
+                    System.out.println("Numero muito grande! ");
+                    --tentativas;
+                    System.out.println("tentativas restantes: " + tentativas);
 
 
+                }
+
+
+            }else{
+                tentativas = 0;
+                System.out.println("Numero fora da escala, reinicie o programa!");
             }
 
-
-        }
-
-        System.out.println("Numero era: " + numeroSecreto);
+            System.out.println("  ");
+            System.out.println("O numero era: " + numeroSecreto);
 
 
 
@@ -91,7 +96,8 @@ public class Aula_25 {
         System.out.println("Número escolhido: "+ random);
 
  */
+        }
+
+
     }
-
-
 }

@@ -1,7 +1,7 @@
 package progetosTemplate.ListaAP1.Exercicio1;
 
 public class Principal {
-    //autor: Guilherme Silveira Figueira
+    //autor: Silveira
     //função: Faça um algoritmo que i mprima os números múltiplos de 4 em um intervalo de 0 a 100.
     //data: 21/05/22
     //input: ;
